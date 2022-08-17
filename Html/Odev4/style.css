@@ -1,0 +1,21 @@
+body {
+    background-color: darksalmon;
+    margin: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    /* justify-content: space-around;x   */
+}
+
+div{
+    margin:0 70px ;
+}
+
+span{
+    font-weight: 600;
+    margin-right: 40px;
+    text-decoration: underline;
+}
