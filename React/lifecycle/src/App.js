@@ -1,18 +1,16 @@
-import {useState, useEffect} from 'react';
-import './App.css';
+import Counter from "./components/Counter";
+import { useState } from "react";
 
 function App() {
-
-  const [number, setNumber] = useState(0);
-
-  useEffect(() => {
-    console.log('State güncellendi');
-  });
+  const [isVisible, setIsVisible] = useState(true);
 
   return (
     <div className="App">
-      <h1>{number}</h1>
-      <button onClick={() => setNumber(number + 1)}> Click</button>
+      {isVisible && <Counter />}
+
+      <br />
+
+      <button onClick={() => setIsVisible(!isVisible)}>Toggle</button>
     </div>
   );
 }
